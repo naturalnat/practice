@@ -28,3 +28,23 @@ function reverse(string){
     }
     return revString
   }
+
+
+  //sol 4 
+  function reverse(string){
+      let revString =''; 
+    for (let char of string){
+        revString = char + revString; 
+    }
+    return revString
+  }
+
+//sol 5 
+function reverse(string){
+    let revString = ''; 
+    string.split('').forEach(function(char){
+        revString = char + revString
+    });
+    return revString;
+}
+
