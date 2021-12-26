@@ -42,9 +42,9 @@ function reverse(string){
 //sol 5 
 function reverse(string){
     let revString = ''; 
-    string.split('').forEach(function(char){
+    string.split('').forEach(char => 
         revString = char + revString
-    });
+    );
     return revString;
 }
 
