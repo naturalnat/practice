@@ -2,8 +2,8 @@
 //create function that reverses string 
 
 function reverse(string){
-    const stringArray = string.split(''); //split string into array 
-    stringArray.reverse();
-    
-    return stringArray.join('')
+  return string
+  .split('')
+  .reverse()
+  .join('');
 }
