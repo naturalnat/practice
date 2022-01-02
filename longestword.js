@@ -1,5 +1,5 @@
-//return string of longest word
-//if more than one, put into array 
+//return longest word as string 
+//if more than one, return array 
 
 
 function longestWord(sentence) {
@@ -12,5 +12,10 @@ function longestWord(sentence) {
         return two.length - one.length
         //compares based on length in each iteration 
         //returns sorted order 
+    })
+    //step 3 - address mulitple words by putting into array 
+    const longestArray = sorted.filter(function(word){
+        //return true if word matches length of first word (bc first word is longest)
+        return word.length === sorted[0].length;
     })
 }
