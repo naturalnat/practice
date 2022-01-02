@@ -18,4 +18,11 @@ function longestWord(sentence) {
         //return true if word matches length of first word (bc first word is longest)
         return word.length === sorted[0].length;
     })
+    //step 4 - check array length 
+    if(longestArray.length === 1){
+        return longestArray[0]
+    } else {
+        return longestArray
+    }
+
 }
