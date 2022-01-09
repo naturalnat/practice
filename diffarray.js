@@ -15,6 +15,16 @@ function difArray(array1, array2) {
             union.push(array2[i]);
         }
     }
+
+    const difference = []
+    for (let i = 0; i < union.length; i++){
+        const current = union[i]; 
+        if (array1.includes(current) && !array2.includes(current)){
+            difference.push(current)
+        } else if (array2.includes(current) && !array1.includes(current)){
+            difference.push(current)
+        }
+    }
 }
 
 difArray([1, 2, 3, 5], [1, 2, 3, 4, 5])
