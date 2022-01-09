@@ -25,6 +25,7 @@ function difArray(array1, array2) {
             difference.push(current)
         }
     }
+    return difference 
 }
 
 difArray([1, 2, 3, 5], [1, 2, 3, 4, 5])
