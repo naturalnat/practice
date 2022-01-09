@@ -4,6 +4,7 @@ function difArray(array1, array2) {
     //start with empty array 
     const union = []
 
+    //loop through both arrays and push unique values to empty union array 
     for (let i = 0; i < array1.length; i++) {
         if (!union.includes(array1[i])) {
             union.push(array1[i])
