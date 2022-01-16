@@ -4,8 +4,22 @@ function sumprime(num){
     if (num < 2){
         return 0; 
     }
-
-    return num;
+    //if greater than 2: keep track of primes up to and including the paramter
+    const primes = [];
+    for (let i = 2; i <= num; i++){
+        let composite = false; 
+        for (const p of primes){
+            if (i % p === 0){
+                composite = true; 
+                break; 
+            }
+        }
+        if (!composite){
+           primes.push(i)
+        }
+    }
+    console.log(primes)
+    return num; 
 }
 
 sumprime(10); 
