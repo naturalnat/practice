@@ -18,11 +18,9 @@ function sumprime(num) {
             primes.push(i)
         }
     }
-    let sum = 0;
-    for (const p of primes) {
-        sum += p;
-    }
-    return num;
+    let sum = primes.reduce((acc, p) => acc + p, 0);
+    
+    return sum;
 }
 
 sumprime(10);
