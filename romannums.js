@@ -1,7 +1,5 @@
 //convert number into Roman numeral 
 
-
-//remember nuances like 4 is IV!
 const numbers = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
 
 const dict = {
@@ -36,4 +34,3 @@ function toRoman(num) {
     return output
 }
 
-console.log(toRoman(25));
