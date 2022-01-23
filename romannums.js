@@ -3,6 +3,7 @@
 
 //remember nuances like 4 is IV!
 const numbers = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
+
 const dict = {
     1: 'I',
     4: 'IV',
@@ -13,11 +14,26 @@ const dict = {
     50: 'L',
     90: 'XL',
     100: 'C',
-    400: 'CD', 
+    400: 'CD',
     500: 'D',
     900: 'CM',
     1000: 'M',
 }
 function toRoman(num) {
+    let output = '';
+    let i = 0;
 
+    while (num > 0) {
+        const subtract = numbers[i];
+        if (subtract > num) {
+            i++;
+        } else {
+            num -= subtract;
+            output += dict[subtract]
+
+        }
+    }
+    return output
 }
+
+console.log(toRoman(25));
