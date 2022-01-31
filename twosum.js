@@ -3,7 +3,7 @@ const sum = 20;
 
 const twoSum = (array, sum) => {
     const past = [];
-
+    let count = 0;
 
     for (let i = 0; i < array.length; i++) {
         let curr = array[i]
@@ -13,8 +13,9 @@ const twoSum = (array, sum) => {
         } else {
             return [needed, curr];
         }
-    
+    count++; 
     }
+    console.log(count)
     return "Not found!";
 };
 
