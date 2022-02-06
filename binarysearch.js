@@ -10,7 +10,7 @@ var search = function(nums, target) {
     //step 2. create while loop, set left = right because they will eventually meet. 
     //we also want to find a middle element. 
     while (left <= right){
-        let middle = left + Math.floor(right - left / 2)
+        let middle = left + Math.floor((right - left) / 2)
     }
 };
 
