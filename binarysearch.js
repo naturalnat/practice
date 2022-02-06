@@ -3,6 +3,8 @@
 
 //the goal is to cut the search time in half.
 
+target = 9  
+
 var search = function(nums, target) {
     //step 1. create 2 pointers, left and right to point to first and last elements. 
     let left = 0; 
@@ -11,6 +13,15 @@ var search = function(nums, target) {
     //we also want to find a middle element. 
     while (left <= right){
         let middle = left + Math.floor((right - left) / 2)
+            //step 3. if middle element === target, return mid. 
+            if(nums[middle] === target){
+                return middle 
+            } else if (middle < target) {
+                left = middle + 1  
+            } else { 
+                right = middle - 1
+            }
     }
+ 
 };
 
