@@ -22,6 +22,7 @@ var search = function(nums, target) {
                 right = middle - 1
             }
     }
- 
+ //step 4. return -1 if target doesnt exist 
+ return -1 
 };
 
